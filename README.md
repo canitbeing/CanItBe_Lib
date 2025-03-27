@@ -1,36 +1,11 @@
-## shift
-리스트에서 첫 번째 요소를 **제거**합니다.
-Removes the first element from the list.
-  > (qr:shift '(1 2 3 4)) => (2 3 4)
+##CanitBe Autolisp Library
+- This file is a list of functions available in AutoLISP.
+- The function names are created to be similar to JavaScript methods.
 
-## unshift
-리스트에 새로운 요소를 **앞**에 **추가**합니다.
-Adds a new element to the front of the list.
-  > (qr:unshift 5 '(1 2 3 4)) => (5 1 2 3 4)
-  > (qr:unshift 5 nil) => (5)
+##Installation
+- All the functions I use are included in (canitbe).
+- By loading the .fas file and adding (canitbe) at the top of the function, you can use the functions I created.
 
-## push
-리스트에 새로운 요소를를 **뒤**에 **추가**합니다.
-Adds a new element to the end of the list
-  > (qr:push 5 '(1 2 3 4)) => (1 2 3 4 5)
-  > (qr:push 5 nil) => (5)
+If you compile the app you created, include the corresponding .fas file in the compilation.
 
-## pop
-리스트에서 **마지막 요소**를 **제거**합니다.
-Removes the last element from the list
-  > (qr:pop '(1 2 3 4)) => (1 2 3)
-
-## slice
-begin 부터 end 까지의 리스트를 반환합니다.
-Returns the list from begin to end
-- begin과 end를 포함합니다.
-- Includes both begin and end.
-  > (qr:slice 1 4 '(0 1 2 3 4 5 6 7 8)) => (1 2 3 4)
-  > (qr:slice nil 4 '(0 1 2 3 4 5 6 7 8)) => (0 1 2 3 4)
-  > (qr:slice 3 nil '(0 1 2 3 4 5 6 7 8)) => (3 4 5 6 7 8)
-
-## at
-index에 있는 값을 반환합니다.
-Returns the value at the index
-  > (qr:at 1 '("a" "b" "c" "f")) => "b"
-  > (qr:at -1 '("a" "b" "c" "f")) => "f"
+If you use it without compiling, you must set up the system to always load this .fas file.
