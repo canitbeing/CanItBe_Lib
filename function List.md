@@ -34,3 +34,8 @@ index에 있는 값을 반환합니다.
 Returns the value at the index
   > (qr:at 1 '("a" "b" "c" "f")) => "b"
   > (qr:at -1 '("a" "b" "c" "f")) => "f"
+
+## concat
+두 개의 리스트를 하나로 합친다.
+Combines two lists into one
+  > (qr:concat '(1 2) '(3 4)) => (1 2 3 4)
