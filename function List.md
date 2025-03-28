@@ -39,3 +39,9 @@ Returns the value at the index
 두 개의 리스트를 하나로 합친다.
 Combines two lists into one
   > (qr:concat '(1 2) '(3 4)) => (1 2 3 4)
+
+
+## entries
+각 인덱스에 대한 키/값 쌍을 포함하는 새 리스트를 반환합니다.
+Returns a new list containing key/value pairs for each index
+  > (qr:concat '("a" "b" "c")) => ((0 "a") (1 "b") (2 "c"))
