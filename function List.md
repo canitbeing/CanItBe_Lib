@@ -39,3 +39,7 @@ Returns a new list containing key/value pairs for each index
 ## fill
 Change all elements to static values
   > (qr:fill "a" (list 1 2 3)) => ("a" "a" "a")
+
+## qr:findLastIndex
+Reverse iterate list and return the index of the first element
+  > (qr:findLastIndex "a" (list "a" "b" "b" "a" "b")) => 3
