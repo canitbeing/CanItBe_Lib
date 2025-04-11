@@ -48,6 +48,6 @@ Reverse iterate list and return the index of the first element
 One-layer list flattening
   > (qr:flat (list "a" (list "b" (list "c" (list "d"))))) => ("a" "b" ("c" ("d")))
 
-#has
+## has
 Returns a boolean value indicating whether an element with the specified value exists.
   > (qr:has "a" (list "a" "b" "c")) => "true"
