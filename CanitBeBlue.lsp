@@ -1,5 +1,5 @@
-; version 1.05
-; date : 2025-04-01
+; version 1.06
+; date : 2025-04-11
 ; https://github.com/canitbeing/CanItBe_Lib
 
 (defun canitbe ()
@@ -228,6 +228,22 @@
 
                 ) lst
             )
+        )
+    )
+
+    ; (qr:has "a" (list "a" "b" "c")) => "true"
+    (defun qr:has (find lst)
+
+        (if (= 'list (type lst))
+            (if (vl-remove-if-not
+                    '(lambda ( ov )
+                        (equal find ov)
+                    ) lst
+                )
+                "true"
+                "false"
+            )
+            "fail:It is not a list type"
         )
     )
 )
